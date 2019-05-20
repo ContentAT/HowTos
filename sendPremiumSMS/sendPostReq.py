@@ -7,22 +7,24 @@ def send_premiumSMS() :
 
   #  headers
   headers = {
-    "apiKey" : "499ac6dc05804d035efe4dc97f4ba19acd93891d93883c91fb059b96a6db84e0",
+    "apiKey" : "YOUR API_KEY",
     "Content-Type" : "application/x-www-form-urlencoded",
   }
   params = {
-    "username" : "sandbox",
-    "to" : ["+254715894752"],
-    "message" : "testing",
-    "from" : "17572",
-    "keyword" : "stocks",
+    "username" : "YOUR_USERNAME",
+    "to" : ["+2547XXXXXXXX","+2547XXXXXXXX"],
+    "message" : "MESSAGE GOES HERE",
+    "from" : "YOUR SHORT CODE",
+    "keyword" : "(OPTIONAL) YOUR KEYWORD",
     # IF YOU ARE SENDING AN ON DEMAND MESSAGE, SPECIFY A LINK ID
     # "linkId" : "",
-    "retryDurationInHours" : 1
+    "retryDurationInHours" : 1 
   }
 
   response = requests.post(url, data = params, headers = headers)
   return response.content
 
+if __name__ == "__main__" :
+  send_premiumSMS()
 
 
