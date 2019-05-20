@@ -15,7 +15,7 @@ def send_premiumSMS() :
     "to" : ["+2547XXXXXXXX","+2547XXXXXXXX"],
     "message" : "MESSAGE GOES HERE",
     "from" : "YOUR SHORT CODE",
-    "keyword" : "(OPTIONAL) YOUR KEYWORD",
+    "keyword" : "YOUR KEYWORD",
     # IF YOU ARE SENDING AN ON DEMAND MESSAGE, SPECIFY A LINK ID
     # "linkId" : "",
     "retryDurationInHours" : 1 
