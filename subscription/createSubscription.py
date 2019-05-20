@@ -29,7 +29,7 @@ def create_subscription():
   url = " https://api.sandbox.africastalking.com/version1/subscription/create"
 
   headers = {
-    "apiKey" : "YOUR APIKEY",
+    "apiKey" : "",
     "Content-Type" : "application/x-www-form-urlencoded",
 }
 
